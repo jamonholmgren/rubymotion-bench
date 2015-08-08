@@ -5,7 +5,7 @@ class BsearchVsFind
 
     Benchmark.ips do |x|
       x.report('find')    { data.find    { |number| number > 77_777_777 } }
-      x.report('bsearch') { data.bsearch { |number| number > 77_777_777 } }
+      # x.report('bsearch') { data.bsearch { |number| number > 77_777_777 } } # Array#bsearch is missing. :-(
       x.compare!
     end
   end

@@ -23,13 +23,13 @@ class FastRuby
     AttrAccessorVsGetterAndSetter.new.run
     BeginRescueVsRespondTo.new.run
     BlockApplyMethod.new.run
-    DefineMethodVsModuleEval.new.run
+    # DefineMethodVsModuleEval.new.run # Eval not supported
 
     # Hash
     BracketVsDup.new.run
     BracketVsFetch.new.run
     FetchVsFetchWithBlock.new.run
-    HashKeySortbyVsSort.new.run
+    # HashKeySortbyVsSort.new.run # #to_h not supported
     KeysEachVsEachKey.new.run
     MergeBangVsSquareEqual.new.run
     MergeVsMergeBang.new.run
